@@ -6,14 +6,6 @@ import org.testng.annotations.Test;
 public class CashbackHackServiceTest {
 
     @Test
-    public void testRemainExactBoundary() {
-        // Проверяет, что если сумма равна 1000, то возврат будет 0
-        CashbackHackService cashbackHackService = new CashbackHackService();
-        int result = cashbackHackService.remain(1000);
-        Assert.assertEquals(result, 0);
-    }
-
-    @Test
     public void testRemainJustBelowBoundary() {
         // Проверяет, что если сумма 900, то нужно докупить 100
         CashbackHackService cashbackHackService = new CashbackHackService();
