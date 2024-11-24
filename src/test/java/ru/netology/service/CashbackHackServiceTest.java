@@ -32,7 +32,7 @@ public class CashbackHackServiceTest {
     @Test
     public void testRemainNegativeAmount() {
         // Проверяет, как сервис обрабатывает отрицательные значения. Если amount меньше нуля,
-        // то программа должна выводить значение нужно для достижения нуля
+        // то программа должна выводить значение нужное для достижения нуля
         CashbackHackService cashbackHackService = new CashbackHackService();
         int result = cashbackHackService.remain(-500);
         Assert.assertEquals(result, 500);
